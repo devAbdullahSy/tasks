@@ -1,0 +1,74 @@
+/* FONTS */
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@100;200;300;400;500;600;700&display=swap");
+
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "IBM Plex Sans Arabic", sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  line-height: 1.6;
+}
+a {
+  text-decoration: none;
+  color: #333;
+}
+a:hover {
+  color: #007bff;
+}
+/* CONTAINER */
+.container {
+  width: 100%;
+  max-width: 700px;
+  height: 100svh;
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* INFO */
+.info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-flow: column wrap;
+  gap: 20px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.info h1 {
+  font-size: 2rem;
+}
+.info p {
+  font-size: 1.2rem;
+  color: #555;
+  text-align: center;
+
+}
+.info img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+.info .socials {
+  display: flex;
+  gap: 10px;
+}
+.info .socials a {
+  font-size: 1.5rem;
+  color: #333;
+  transition: color 0.3s;
+}
+.info .socials a:hover {
+  color: #007bff;
+}
