@@ -1,0 +1,144 @@
+/* FONTS */
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&display=swap");
+
+:root {
+  /* COLORS */
+  --Lightest: #e6f0ff;
+  --Lighter: #99c4ff;
+  --Light: #4d97ff;
+  --Primary: #006bff;
+  --Dark: #004bb3;
+  --Darker: #003680;
+}
+
+/* RESET */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: "IBM Plex Sans Arabic", serif;
+}
+
+/* MAIN CSS */
+
+body {
+  font-family: "IBM Plex Sans Arabic", serif;
+  background-color: var(--Primary);
+  color: var(--Lightest);
+  position: relative;
+}
+
+/* services */
+.services {
+  margin-bottom: 20px;
+}
+
+.container {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  height: 100svh;
+  padding-right: 20px;
+  padding-left: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.sectionTitle {
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-align: center;
+  color: var(--Lightest);
+  text-shadow: #003680 0px 0px 10px;
+  text-transform: uppercase;
+}
+
+.servicesCards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+.serviceCard {
+  background-color: var(--Light);
+  border-radius: 10px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+.serviceCard:hover {
+  background-color: var(--Darker);
+  transition: all 0.3s ease;
+}
+.serviceIcon {
+  width: 70px;
+  height: 70px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--Lighter);
+  border-radius: 50%;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+.serviceIcon i {
+  font-size: 2rem;
+  color: var(--Lightest);
+}
+.serviceTitle {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--Lightest);
+  text-align: center;
+  width: 100%;
+  text-transform: uppercase;
+  text-shadow: #003680 0px 0px 10px;
+}
+.serviceDescription {
+  font-size: 1rem;
+  font-weight: 400;
+  color: var(--Lightest);
+  text-align: center;
+}
+
+.home {
+  background-color: var(--Light);
+  color: var(--Lightest);
+  text-decoration: none;
+  border-radius: 10px;
+  padding: 10px 20px;
+  padding-top: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+.home:hover {
+  background-color: var(--Darker);
+  transition: all 0.3s ease;
+}
+
+@media screen and (max-width: 768px) {
+  .sectionTitle {
+    font-size: 2rem;
+  }
+  .serviceCard {
+    padding: 15px;
+  }
+  .serviceTitle {
+    font-size: 1.25rem;
+  }
+  .serviceDescription {
+    font-size: 0.9rem;
+  }
+}
