@@ -38,7 +38,7 @@ body {
   padding: 0;
 }
 .container {
-  max-width: 1200px;
+  max-width: 1440px;
   margin: 0 auto;
   padding: 0 20px;
 }
@@ -125,6 +125,46 @@ body {
 }
 .hero__cta:hover {
   background-color: #27ae60;
+}
+
+/* Features Section */
+.features {
+  background-color: var(--color-background);
+  padding: 50px 20px;
+  text-align: center;
+}
+.features__content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+.features__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  margin: 0 auto;
+  width: 100%;
+  background-color: var(--color-background);
+  border-radius: 10px;
+}
+.features__item {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+}
+.features__item h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: var(--color-heading);
+}
+.features__item p {
+  font-size: 1rem;
+  color: var(--color-text);
 }
 
 /* Responsive */
