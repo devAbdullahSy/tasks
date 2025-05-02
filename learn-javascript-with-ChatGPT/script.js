@@ -10,7 +10,7 @@
 
 // My Info ..
 const myName = "Abdullah Sayed";
-const myBirthYear = 1994;
+let myAge = 30;
 let isLearning = true;
 
 console.log(myName, myBirthYear, isLearning); // Abdullah Sayed 1994 true
